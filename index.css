@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200&family=Dongle:wght@300&family=Julee&family=Rubik:wght@300&display=swap');
+
+:root{
+    --arima-font: 'Arima Madurai', cursive;
+    --dongle-font: 'Dongle', sans-serif;
+    --julee-font: 'Julee', cursive;
+    --rubik-font: 'Rubik', sans-serif;
+ }
+
+ .heading{
+    text-align: center;
+    font-style: var(--rubik-font);
+    font-weight: bold;
+ }
+
+.main{
+    width: 60%;
+    border: 2px solid black;
+
+}
+
+.tablediv{
+    padding-top: 60px;
+
+}

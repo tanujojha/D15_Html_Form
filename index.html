@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BootStrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">   
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./index.css">
+    <title>Form With Table</title>
+</head>
+<body>
+
+    <div class="headingdiv">
+        <h1 class="heading">Form Submission</h1>
+    </div>
+
+   <div class="main container-fluid my-2 p-3">
+        <form action="" id="form">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">First Name</label>
+                <input id="fname" type="text" class="fname form-control form-control-sm" id="exampleFormControlInput1" placeholder="Enter First Name" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+                <input id="lname" type="text" class="lname form-control form-control-sm" id="exampleFormControlInput1" placeholder="Enter Last Name" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Address</label>
+                <input id="address" type="text" class="address form-control form-control-sm" id="exampleFormControlInput1" placeholder="Address" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Pincode</label>
+                <input id="pincode" type="number" class="pincode form-control form-control-sm" id="exampleFormControlInput1" placeholder="Pincode" required>
+            </div>
+            <!-- gender label div -->
+            <div class="genderdiv ">
+                <label for="exampleFormControlInput1" class="form-label">Gender</label>
+            </div>
+            <!-- gender radios -->
+            <div class="form-check form-check-inline mx-4">
+                <input id="femradio" class="femradio form-check-input" type="radio" name="gender" id="inlineRadio1" value="female">
+                <label class="form-check-label" for="femradio">Female</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="malradio" class="malradio form-check-input" type="radio" name="gender" id="inlineRadio2" value="male">
+                <label class="form-check-label" for="malradio">Male</label>
+            </div>
+            <!-- Food label div  -->
+            <div class="fooddiv mt-3">
+                <label for="exampleFormControlInput1" class="form-label">Food Choice</label>
+            </div>
+            <!-- food radios -->
+            <div class="form-check form-check-inline mx-4">
+                <input class="food form-check-input" type="checkbox" name="food" id="inlineRadio1" value="Momos">
+                <label class="form-check-label" for="inlineRadio1">Momos</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="food form-check-input" type="checkbox" name="food" id="inlineRadio2" value="Rice">
+                <label class="form-check-label" for="inlineRadio2">Rice</label>
+            </div>
+            <div class="form-check form-check-inline mx-5">
+                <input class="food form-check-input" type="checkbox" name="food" id="inlineRadio1" value="Roti">
+                <label class="form-check-label" for="inlineRadio1">Roti</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="food form-check-input" type="checkbox" name="food" id="inlineRadio2" value="Maggie">
+                <label class="form-check-label" for="inlineRadio2">Maggie</label>
+            </div>
+            <div class="form-check form-check-inline mx-5">
+                <input class="food form-check-input" type="checkbox" name="food" id="inlineRadio1" value="Pasta">
+                <label class="form-check-label" for="inlineRadio1">Pasta</label>
+            </div>
+    
+            <!-- state and country  -->
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">State</label>
+                <input id="state" type="text" class="state form-control form-control-sm" id="exampleFormControlInput1" placeholder="State" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Country</label>
+                <input id="country" type="text" class="country form-control form-control-sm" id="exampleFormControlInput1" placeholder="Country" required>
+            </div>
+    
+            <div class="btndiv d-grid gap-2 col-4 mx-auto">
+                <button id="submitbtn" class="submitbtn btn btn-md btn-primary">Submit</button>
+            </div>
+        </form>
+   </div>
+
+   <!-- table div  -->
+   <div id="tablediv" class="tablediv container">
+    <table id="table" class="table table-danger">
+       
+    </table>
+   </div>
+
+    <!-- BootStrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>     
+    <!-- Sript File -->
+    <script src="./index.js"></script>
+</body>
+</html>
+
